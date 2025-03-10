@@ -30,6 +30,7 @@
     min-width: auto;
     background-color: #2980b9;
     margin: 10px auto; /* सेंटर करने के लिए */
+    margin-bottom: 0;
     justify-content: center;
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -66,6 +67,31 @@
     display: flex;
     font-size: 15px;
 }
+.yellowbox{
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: yellow;
+    margin: 0 auto;
+    justify-content: center;
+}
+.welcome {
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 24px;
+    animation: blinkEffect 3s infinite;
+}
+
+@keyframes blinkEffect {
+    0% { opacity: 1; color: red; }
+    33% { opacity: 1; color: blue; }
+    66% { opacity: 1; color: green; }
+    67% { opacity: 0; }  /* 1 सेकंड के लिए गायब */
+    100% { opacity: 0; }
+}
+
+
 .wonerimage{
     width: 100%; /* पूरे स्क्रीन के हिसाब से एडजस्ट होगा */
     max-width: 600px; /* ज्यादा बड़ा नहीं होगा */
@@ -97,4 +123,37 @@
         width: 95%; /* छोटे स्क्रीन पर पूरा लेआउट लें */
         font-size: 20px; /* टेक्स्ट साइज थोड़ा छोटा करें */
     }
+}
+.sliderlaganahai{
+    height: 230px;
+    width: 100%;
+    background-color: antiquewhite;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.ourtoprecuter{
+    display: flex;
+    color: rgb(236, 187, 26);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: rgb(88, 83, 83) 1PX 1px;
+    font-size: 40PX;
+}
+
+.sliderboxer-container {
+    display: flex;
+    overflow-x: auto;  /* Horizontally scrollable */
+    scroll-snap-type: x mandatory; /* Smooth scrolling */
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sliderboxer {
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    box-shadow: purple 6px 6px 10px 2px;
+    margin: 10px;
+    scroll-snap-align: start; /* Snap effect */
 }
