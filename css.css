@@ -74,6 +74,11 @@
     background-color: yellow;
     margin: 0 auto;
     justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    white-space: nowrap;   
+    border-bottom: solid rgb(141, 139, 139) 1px;
+    
 }
 .welcome {
     display: flex;
@@ -81,7 +86,24 @@
     font-weight: bold;
     font-size: 24px;
     animation: blinkEffect 3s infinite;
+    
 }
+.welcometext{
+    display: inline-block;
+        white-space: nowrap;
+        animation: scrollLeft 10s linear infinite;
+        color: red;
+        
+    }
+
+    @keyframes scrollLeft {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
 
 @keyframes blinkEffect {
     0% { opacity: 1; color: red; }
@@ -95,7 +117,7 @@
 .wonerimage {
     width: 100%;
     max-width: 600px;
-    height: 400px;
+    height: 300px;
     display: flex;
     overflow: hidden;
     margin: auto;
