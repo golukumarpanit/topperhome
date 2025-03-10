@@ -26,6 +26,14 @@
     color: white;
     text-align: center;
 }
+.address{
+    display: flex;
+    color: yellow;
+}
+.address1{
+    display: flex;
+    font-size: 15px;
+}
 
 /* बटन के लिए होवर इफ़ेक्ट */
 .kyakareshreeg.button:hover {
