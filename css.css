@@ -146,6 +146,7 @@
     scroll-snap-type: x mandatory; /* Smooth scrolling */
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
 }
 
 .sliderboxer {
@@ -156,4 +157,31 @@
     box-shadow: purple 6px 6px 10px 2px;
     margin: 10px;
     scroll-snap-align: start; /* Snap effect */
+    border-radius: 10px;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
+.adjust{
+    height: 150px;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Niche se distance */
+    right: 20px; /* Right side se distance */
+    z-index: 1000; /* Sabse upar dikhane ke liye */
+}
+
+.whatsapp-button img {
+    width: 50px;  /* Icon size */
+    height: 50px;
+    border-radius: 50%; /* Gol design ke liye */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
