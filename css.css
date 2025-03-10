@@ -1,0 +1,41 @@
+.DILHAIKIMANTANHI {
+    height: 400px;
+    width: 100%;
+    background-color: aliceblue;
+    align-content: center;   
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.kyakareshree, .kyakareshreeg {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    max-height: 100% auto;
+    width: 90%; /* मोबाइल के लिए पूरी चौड़ाई */
+    max-width: 400px;
+    min-width: auto;
+    background-color: #2980b9;
+    margin: 10px auto; /* सेंटर करने के लिए */
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* बटन के लिए होवर इफ़ेक्ट */
+.kyakareshreeg.button:hover {
+    background-color: #45a049;
+}
+
+/* मोबाइल व्यू के लिए मीडिया क्वेरी */
+@media (max-width: 768px) {
+    .kyakareshree, .kyakareshreeg {
+        width: 95%; /* छोटे स्क्रीन पर पूरा लेआउट लें */
+        font-size: 20px; /* टेक्स्ट साइज थोड़ा छोटा करें */
+    }
+}
