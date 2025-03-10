@@ -92,26 +92,27 @@
 }
 
 
-.wonerimage{
-    width: 100%; /* पूरे स्क्रीन के हिसाब से एडजस्ट होगा */
-    max-width: 600px; /* ज्यादा बड़ा नहीं होगा */
-    height: 400px; /* ऑटोमैटिकली एडजस्ट होगा */
-    display: block;
-    margin: auto; /* सेंटर में लाने के लिए */
-    overflow: hidden;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: solid black 2px;
-}
-.kyashreegman{
-    height: 100%;
+.wonerimage {
     width: 100%;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
     border-radius: 10px;
     border: solid black 2px;
 }
-
+.kyashreegman {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.active {
+    opacity: 1;
+}
 /* बटन के लिए होवर इफ़ेक्ट */
 .kyakareshreeg.button:hover {
     background-color: #45a049;
@@ -137,7 +138,7 @@
     color: rgb(236, 187, 26);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: rgb(88, 83, 83) 1PX 1px;
-    font-size: 40PX;
+    font-size: 20PX;
 }
 
 .sliderboxer-container {
@@ -178,10 +179,11 @@
 }
 
 .whatsapp-button img {
-    width: 50px;  /* Icon size */
-    height: 50px;
+    width: 70px;  /* Icon size */
+    height: 70px;
     border-radius: 50%; /* Gol design ke liye */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: white;
 }
 
 
