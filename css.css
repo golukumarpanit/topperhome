@@ -2,20 +2,23 @@
     height: 400px;
     width: 100%;
     background-color: aliceblue;
-    align-content: center;   
-    border-radius: 10px;
+    align-content: center;     
     justify-items: center;
+    height: auto;
+    background-color: #f5e0c0;
 }
 .logolanahah{
     display: flex;
     height: 50px;
     align-items: center;
+    justify-items: center;
 }
 .PHOTOLAGAO{
     display: flex;
     width: 50PX;
     height: 50PX;
     border-radius: 100%;
+    border: solid black 2px;
 }
 .kyakareshree{
     display: flex;
@@ -62,6 +65,25 @@
 .address1{
     display: flex;
     font-size: 15px;
+}
+.wonerimage{
+    width: 100%; /* पूरे स्क्रीन के हिसाब से एडजस्ट होगा */
+    max-width: 600px; /* ज्यादा बड़ा नहीं होगा */
+    height: 400px; /* ऑटोमैटिकली एडजस्ट होगा */
+    display: block;
+    margin: auto; /* सेंटर में लाने के लिए */
+    overflow: hidden;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.kyashreegman{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: solid black 2px;
 }
 
 /* बटन के लिए होवर इफ़ेक्ट */
