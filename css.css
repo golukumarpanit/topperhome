@@ -6,8 +6,37 @@
     border-radius: 10px;
     justify-items: center;
 }
+.logolanahah{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.PHOTOLAGAO{
+    display: flex;
+    width: 50PX;
+    height: 50PX;
+    border-radius: 100%;
+}
+.kyakareshree{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    max-height: 100% auto;
+    width: 100%; /* मोबाइल के लिए पूरी चौड़ाई */
+    max-width: 100%;
+    min-width: auto;
+    background-color: #2980b9;
+    margin: 10px auto; /* सेंटर करने के लिए */
+    justify-content: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
 
-.kyakareshree, .kyakareshreeg {
+.kyakareshreeg {
     display: flex;
     flex-direction: column;
     height: 100px;
