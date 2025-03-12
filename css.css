@@ -1,11 +1,14 @@
 .DILHAIKIMANTANHI {
-    height: 400px;
+    
     width: 100%;
     background-color: aliceblue;
     align-content: center;     
     justify-items: center;
     height: auto;
     background-color: #f5e0c0;
+}
+.purapage{
+    width: 600px;
 }
 .logolanahah{
     display: flex;
@@ -45,10 +48,10 @@
     flex-direction: column;
     height: 100px;
     max-height: 100% auto;
-    width: 90%; /* मोबाइल के लिए पूरी चौड़ाई */
-    max-width: 400px;
+    width: 100%; /* मोबाइल के लिए पूरी चौड़ाई */    
     min-width: auto;
-    background-color: #2980b9;
+    background: linear-gradient(90deg, #3add63, #bae02f, #f10303); /* 3 रंगों का ग्रेडिएंट */
+    background-size: 200% auto; /* ग्रेडिएंट को बड़ा करें */
     margin: 10px auto; /* सेंटर करने के लिए */
     border-radius: 10px;
     justify-content: center;
@@ -58,6 +61,22 @@
     align-items: center;
     color: white;
     text-align: center;
+    animation: gradientMove 5s linear infinite; /* ग्रेडिएंट मूवमेंट के लिए एनिमेशन */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%; /* शुरुआत में बाएं से */
+    }
+    50% {
+        background-position: 100% 50%; /* बीच में दाएं से */
+    }
+    100% {
+        background-position: 0% 50%; /* वापस बाएं से */
+    }
+}
+.kyakareshreeg button{
+    width: 100%;
 }
 .address{
     display: flex;
@@ -122,7 +141,7 @@
     overflow: hidden;
     margin: auto;
     position: relative;
-    border-radius: 10px;
+    
     border: solid black 2px;
 }
 .kyashreegman {

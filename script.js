@@ -5,7 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("naredramodi").onclick = function() {
-        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeDF-N7G-uq47AZakGkrWZ3D76xbMA-zENRhmKRupZhIXuHIw/viewform";
+        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfeLuAUNB1iF3V1LmVFy6l1woZGhVm7SvEALKSeSaTZcfqrNw/viewform";
+    };
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("Teligram").onclick = function() {
+        window.location.href = "https://t.me/TopperHomeTuition";
     };
 });
 // yaha se slider kam kr rhe hai
