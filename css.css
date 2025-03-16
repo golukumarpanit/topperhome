@@ -194,9 +194,27 @@
 @media screen and (max-width: 700px) {
     .DILHAIKIMANTANHI{
         width: 100%;
+        margin: 0 auto;
+    }
     }
     .purapage{
         width: 100%;
+        margin: 0 auto;
+    }
+    }
+    .kyakareshree {
+        display: flex;
+        width: 100%;
+        justify-items: center;
+        justify-content: center;
+    }
+    .logolanahah{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+        height: auto;
+        margin: 0 auto;
     }
     .sliderlaganahai{    
         width: 100%;
