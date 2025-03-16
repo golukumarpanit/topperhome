@@ -167,7 +167,7 @@
     }
 }
 .sliderlaganahai{
-    height: 230px;
+    
     width: 100%;
     background-color: antiquewhite;
     justify-content: center;
@@ -182,31 +182,55 @@
     font-size: 20PX;
 }
 
+/* Default styles for larger screens */
 .sliderboxer-container {
     display: flex;
-    overflow-x: auto;  /* Horizontally scrollable */
-    scroll-snap-type: x mandatory; /* Smooth scrolling */
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth; /* Smooth scrolling effect */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to each slide */
 }
 
 .sliderboxer {
-    display: inline-flex;
-    height: 100px;
-    width: 100px;
-    background-color: whitesmoke;
-    box-shadow: purple 6px 6px 10px 2px;
-    margin: 10px;
-    scroll-snap-align: start; /* Snap effect */
-    border-radius: 10px;
-    justify-content: center;
-    justify-items: center;
-    overflow: hidden;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    scroll-snap-align: start; /* Snap to the start of each slide */
+    width: 100%; /* Each slide takes full width */
 }
-.adjust{
+
+/* Media query for mobile devices */
+@media screen and (max-width: 700px) {
+    .sliderlaganahai{    
+        width: 100%;
+        background-color: antiquewhite;
+        justify-content: center;
+        justify-items: center;
+        
+    }
+    .sliderboxer-container {        
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        
+        justify-items: center;
+        
+        width: 100%;
+    }
+
+    .sliderboxer {
+        flex: 0 0 100%; /* Each slide takes full width on mobile */
+        scroll-snap-align: start;
+        height: 400px;
+        width: 95%;
+        justify-items: center;
+        overflow: hidden;
+        border: solid black 1px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .sliderboxer img {
+        height: 400px;
+        width: 100%   ;
+    }
+}.adjust{
     height: 150px;
     overflow: hidden;
     overflow-y: hidden;
@@ -226,5 +250,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     background: white;
 }
+
 
 
