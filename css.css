@@ -195,7 +195,7 @@
     .DILHAIKIMANTANHI{
         width: 100%;
         margin: 0 auto;
-    }
+    
     }
     .purapage{
         width: 100%;
@@ -258,7 +258,7 @@
         background: white;
     }
 /* mujhe yaha se mobile ke liye updata krna hai */
-}.adjust{
+.adjust{
     height: 150px;
     overflow: hidden;
     overflow-y: hidden;
