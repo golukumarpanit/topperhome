@@ -218,8 +218,7 @@
     }
     .address{
         width: 100%;
-        font-size: 100%;
-        
+        font-size: 24pt;        
         white-space: nowrap;
         height: auto;
         justify-content: center;
