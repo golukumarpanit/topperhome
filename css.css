@@ -205,15 +205,22 @@
     .kyakareshree {
         display: flex;
         width: 100%;
-        justify-items: center;
-        justify-content: center;
+        height: 100%
     }
     .logolanahah{
         display: flex;
         width: 100%;
         justify-content: center;
         justify-items: center;
+        align-items: center;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .address{
+        width: 100%;
+        white-space: nowrap;
         height: auto;
+        justify-content: center;
         margin: 0 auto;
     }
     .sliderlaganahai{    
