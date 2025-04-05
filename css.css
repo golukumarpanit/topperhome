@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Styles */
+.DILHAIKIMANTANHI {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #5d18a2;
+}
+
+/* Page Wrapper */
+.purapage {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Logo Section */
+.logolanahah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #5d18a2;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.PHOTOLAGAO {
+    display: flex;
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+}
+
+/* Header Title */
+.kyakareshree {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    background-color: #5812d1;
+    margin: 20px auto 0;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(9, 2, 2);
+    animation: gradientMove 5s linear infinite;
+}
+
+/* Gradient Box Section */
+.kyakareshreeg {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 90%;
+    margin: 10px auto;
+    background: linear-gradient(90deg, #3add63, #bae02f, #f10303);
+    background-size: 200% auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(9, 2, 2);
+    animation: gradientMove 5s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Button */
+.kyakareshreeg button {
+    width: 100px;
+    height: 35px;
+    background-color: rgb(107, 111, 224);
+    border: 2px solid white;
+    border-radius: 19px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.kyakareshreeg button:hover {
+    background-color: #45a049;
+}
+
+.kyakareshreeg button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Address Section */
+.address, .address1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+    color: yellow;
+    margin: 0 auto;
+    white-space: wrap;
+}
+
+/* Yellow Box Marquee */
+.yellowbox {
+    display: flex;
+    width: 100%;
+    background-color: yellow;
+    justify-content: center;
+    border-bottom: 1px solid rgb(141, 139, 139);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.welcome {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 24px;
+    animation: blinkEffect 3s infinite;
+}
+
+.welcometext {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollLeft 10s linear infinite;
+    color: red;
+}
+
+@keyframes scrollLeft {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes blinkEffect {
+    0% { opacity: 1; color: red; }
+    33% { color: blue; }
+    66% { color: green; }
+    67%, 100% { opacity: 0; }
+}
+
+/* Image Slider */
+.wonerimage {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    border: 2px solid black;
+}
+
+.kyashreegman {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: cover;
+}
+
+.kyashreegman.active {
+    opacity: 1;
+}
+
+/* Slider Section */
+.sliderlaganahai {
+    width: 90%;
+    background-color: rgb(91, 49, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Recruiter Title */
+.ourtoprecuter h1 {
+    color: white;
+    text-transform: uppercase;
+    font: 40px 'Poppins', sans-serif;
+    text-shadow: 1px 1px rgb(182, 203, 64);
+    padding: 25px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Slider Container */
+.sliderboxer-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.sliderboxer {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+/* Box Section */
+.show-item {
+    margin-top: 50px;
+    background-color: #6d31a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    width: 500px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.box1 { background-image: url('Untitled.png'); }
+.box2 { background-image: url('second.png'); }
+.box3 { background-image: url('third.jpg'); }
+.box4 { background-image: url('third.png'); }
+
+.fix-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.box h2 {
+    font-size: 16px;
+    padding: 15px;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #cfcfcf;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    width: 100%;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgb(66, 39, 220);
+    border-radius: 50%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    animation: bounceWhatsApp 2s infinite;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+    background-color: rgb(35, 48, 232);
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+
+/* Animation */
+@keyframes bounceWhatsApp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Dark mode friendly */
+@media (prefers-color-scheme: dark) {
+    .whatsapp-button {
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .box {
+      width: 95%;
+    }
+
+    .kyakareshree,
+    .kyakareshreeg {
+      font-size: 20px;
+      height: auto;
+      padding: 10px;
+    }
+
+    .PHOTOLAGAO {
+      width: 40px;
+      height: 40px;
+    }
+
+    .welcome {
+      font-size: 18px;
+    }
+
+    .welcometext {
+      font-size: 14px;
+    }
+
+    .address, .address1 {
+      font-size: 12px;
+      text-align: center;
+      flex-wrap: wrap;
+      padding: 5px;
+    }
+
+    .wonerimage {
+      height: 200px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .box {
+      width: 90%;
+    }
+
+    .kyakareshree,
+    .kyakareshreeg {
+      font-size: 26px;
+    }
+
+    .welcome {
+      font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .box {
+      width: 500px;
+    }
+
+    .kyakareshree,
+    .kyakareshreeg {
+      font-size: 32px;
+    }
+
+    .welcome {
+      font-size: 26px;
+    }
+}
