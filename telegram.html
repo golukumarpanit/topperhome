@@ -13,17 +13,30 @@
             background-color: brown;
             
         }
+        .helo{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <button> <a> First Jion Telegram</a> </button>
-        <button> <a>Open Form Link</a> </button>
+        <button class="helo" onclick="openForm0()">  First Jion Telegram </button>
+        <button class="helo" onclick="openForm()"> Click Here For Open Form </button>
         
     </div>
     
     <script>
-        
+        function openForm() {
+            alert("Please Join Telegram Before Open Form")
+        window.open("https://docs.google.com/forms/d/e/1FAIpQLSeDF-N7G-uq47AZakGkrWZ3D76xbMA-zENRhmKRupZhIXuHIw/viewform", "_blank");    
+        }
+        function openForm0() {   
+             
+        window.open("https://t.me/TopperHomeTuition", "_blank");    
+        }
+
     </script>
 </body>
 </html>
