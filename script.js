@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Button actions
     document.querySelector("#teacherForm button").onclick = function (e) {
         e.preventDefault();
-        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfeLuAUNB1iF3V1LmVFy6l1woZGhVm7SvEALKSeSaTZcfqrNw/viewform";
+        window.open("telegram.html", "_blank");
+
     };
 
     document.querySelector("#jobForm button").onclick = function (e) {
