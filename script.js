@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector("#jobForm button").onclick = function (e) {
         e.preventDefault();
-        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeDF-N7G-uq47AZakGkrWZ3D76xbMA-zENRhmKRupZhIXuHIw/viewform";
+        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfeLuAUNB1iF3V1LmVFy6l1woZGhVm7SvEALKSeSaTZcfqrNw/viewform";
     };
 
     document.querySelector("#telegramJob button").onclick = function (e) {
